@@ -1,12 +1,24 @@
 <% @videos.each do |video| %>
   <div class="video">
     <h6>
-      <span class="video-date"><%= video[:date].strftime("%B %d, %Y") %></span>
+      <span class="video-date"><%= video[:date].strftime("%B %d, %Y") if video[:date] %></span>
       <span class="video-author"><%= video[:speaker] %></span>
     </h6>
     <h2>
       <span class="video-title"><%= video[:title] %></span>
     </h2>
-    <video src="<%= video[:url] %>" width="320" height="240"></video>
+    
+    <% unless video[:url].blank? %>
+      <% uri = URI.parse(video[:url]) %>
+      <% type = File.extname(uri.path).gsub(/\./, "video/") %>
+      <% movies = %w{video/mp4 video/webm} %>
+      <% if movies.member?(type) %>
+        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{"example_option":true}'>
+          <source src="<%= video[:url] %>" type="<%= type %>" />
+        </video>
+      <% else %>
+        <%= link_to "Link to video", video[:url] %>
+      <% end %>
+    <% end%>
   </div>
 <% end %>

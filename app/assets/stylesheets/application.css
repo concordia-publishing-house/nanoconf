@@ -10,6 +10,5 @@
  *
  *= require_self
  *= require font-awesome
- *= require mediaelement_rails
  *= require_tree .
  */

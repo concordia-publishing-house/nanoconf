@@ -8,7 +8,6 @@ gem 'sqlite3'
 gem 'twitter-bootstrap-rails'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
-gem 'mediaelement_rails'
 
 
 # Gems used only for assets and not required
