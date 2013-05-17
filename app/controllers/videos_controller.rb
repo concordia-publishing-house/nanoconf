@@ -9,6 +9,7 @@ class VideosController < ApplicationController
       :speaker: Katrina Owen
       :date: 2012-09-21
       :url: videos/therapeutic_refactoring.webm
+      :poster: posters/therapeutic-refactoring.png
       :venue: Scottish Ruby Conference
       :year: 2012
       :pick: Luke Booth
@@ -17,6 +18,7 @@ class VideosController < ApplicationController
       :speaker: Aaron Patterson
       :date: 2012-09-28
       :url: http://cdn.confreaks.com/system/assets/datas/833/original/427-rubyconf2010-zomg-why-is-this-code-so-slow-large.mp4?1293994342
+      :poster: posters/rubyconf-2010.png
       :venue: Rubyconf
       :year: 2010
     
@@ -36,6 +38,7 @@ class VideosController < ApplicationController
       :speaker: Glenn Vanderburg
       :date: 2012-10-26
       :url: http://cdn.confreaks.com/system/assets/datas/25/original/glenn-vanderburg-large.mp4?1283274745
+      :poster: posters/lone-star-ruby-2010.png
       :venue: Lone Star Ruby Conference
       :year: 2010
       :pick: Jesse Lewis
@@ -45,6 +48,7 @@ class VideosController < ApplicationController
       :speaker: Aaron Patterson
       :date: 2012-11-02
       :url: http://cdn.confreaks.com/system/assets/datas/5155/original/1228-aloharuby2012-keynote-rails-4-and-the-future-of-web-large.mp4?1351104264
+      :poster: posters/aloha-ruby-2012.png
       :venue: Aloha Ruby Conference
       :year: 2012
     
@@ -53,6 +57,7 @@ class VideosController < ApplicationController
       :speaker: James Edward Gray II
       :date: 2012-11-09
       :url: http://cdn.confreaks.com/system/assets/datas/5251/original/1244-aloharuby2012-ten-things-you-didn-t-know-ruby-could-do-large.mp4?1351448441
+      :poster: posters/aloha-ruby-2012.png
       :venue: Aloha Ruby Conference
       :year: 2012
     
@@ -69,6 +74,7 @@ class VideosController < ApplicationController
       :speaker: Avdi Grimm
       :date: 2012-12-07
       :url: http://cdn.confreaks.com/system/assets/datas/2272/original/658-rubyconf2011-exceptional-ruby-small.mp4?1319069430
+      :poster: posters/exceptional-ruby.png
       :venue: Rubyconf
       :year: 2011
       
@@ -76,6 +82,7 @@ class VideosController < ApplicationController
       :speaker: Sandi Metz
       :date: 2012-12-28
       :url: http://cdn.confreaks.com/system/assets/datas/5284/original/1115-gogaruco2012-go-ahead-make-a-mess-large.mp4?1352418085
+      :poster: posters/make-a-mess.png
       :venue: GoGaRuCo
       :year: 2012
       :pick: Bob Lail
@@ -84,6 +91,7 @@ class VideosController < ApplicationController
       :speaker: Robert Martin
       :date: 2013-01-04
       :url: http://cdn.confreaks.com/system/assets/datas/2716/original/759-rubymidwest2011-keynote-architecture-the-lost-years-large.mp4?1323842135
+      :poster: posters/the-lost-years.png
       :venue: Ruby Midwest
       :year: 2011
       :pick: Gene Doyel

@@ -30,8 +30,10 @@
           preload="none"
           width="640"
           height="360"
-          src="<%= video[:url] %>"
-          poster="placeholder.gif">
+          <% if video[:poster] %>
+          poster="<%= video[:poster] %>"
+          <% end %>
+          src="<%= video[:url] %>">
         </video>
       <% else %>
         <%= link_to "Link to video", video[:url] %>
