@@ -30,9 +30,8 @@
           preload="none"
           width="640"
           height="360"
-          poster="placeholder.gif"
-          data-setup='{"example_option":true, "preload":"none"}'>
-          <source src="<%= video[:url] %>" type="<%= type %>" />
+          src="<%= video[:url] %>"
+          poster="placeholder.gif">
         </video>
       <% else %>
         <%= link_to "Link to video", video[:url] %>
