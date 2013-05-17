@@ -6,6 +6,7 @@ class VideosController < ApplicationController
     - :title: Therapeutic Refactoring
       :speaker: Katrina Owen
       :date: 2012-09-21
+      :url: /videos/therapeutic_refactoring.webm
       :venue: Scottish Ruby Conference
       :year: 2012
       :pick: Luke Booth
