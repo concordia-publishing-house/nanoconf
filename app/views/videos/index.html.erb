@@ -24,7 +24,12 @@
       <% type = File.extname(uri.path).gsub(/\./, "video/") %>
       <% movies = %w{video/mp4 video/webm} %>
       <% if movies.member?(type) %>
-        <video id="example_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360" data-setup='{"example_option":true}'>
+        <video
+          class="video-js vjs-default-skin"
+          controls
+          width="640"
+          height="360"
+          data-setup='{"example_option":true, "preload":"none"}'>
           <source src="<%= video[:url] %>" type="<%= type %>" />
         </video>
       <% else %>
