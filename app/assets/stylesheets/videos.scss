@@ -5,13 +5,14 @@
     margin-bottom: 0.125em;
     line-height: 1em;
     
-    .video-author, .video-date {
+    .video-author, .video-date, .video-venue {
       display: inline-block;
       margin-right: 0.5em;
     }
     
-    .video-author { color: #555; }
     .video-date { font-weight: 400; color: rgb(13, 102, 145); }
+    .video-author { color: #555; }
+    .video-venue { font-weight: 200; color: #aaa }
   }
   
   h2 {
@@ -19,5 +20,10 @@
     line-height: 1em;
     
     .video-title { font-weight: 100; }
+    .video-pick {
+      color: gold;
+      text-shadow: 0 0 8px gold;
+      font-size: 0.66em;
+    }
   }
 }

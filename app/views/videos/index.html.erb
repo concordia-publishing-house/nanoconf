@@ -3,9 +3,20 @@
     <h6>
       <span class="video-date"><%= video[:date].strftime("%B %d, %Y") if video[:date] %></span>
       <span class="video-author"><%= video[:speaker] %></span>
+      <% if video[:venue] %>
+        <span class="video-venue">
+          <%= video[:venue] %>
+          <% if video[:year] %>
+            (<%= video[:year] %>)
+          <% end %>
+        </span>
+      <% end %>
     </h6>
     <h2>
       <span class="video-title"><%= video[:title] %></span>
+      <% if video[:pick] %>
+        <i class="video-pick icon-star" data-toggle="tooltip" title="Picked by <%= video[:pick] %>"></i>
+      <% end %>
     </h2>
     
     <% unless video[:url].blank? %>
