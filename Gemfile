@@ -6,7 +6,6 @@ gem 'sqlite3'
 
 
 gem 'twitter-bootstrap-rails'
-gem 'font-awesome-rails'
 gem 'jquery-rails'
 
 
