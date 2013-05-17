@@ -55,6 +55,10 @@
     <script>
       $(function() {
         $('[data-toggle="tooltip"]').tooltip();
+        
+        if(window.location.pathname == '/sandbox/nanoconf') {
+          window.location = '/sandbox/nanoconf/';
+        }
       });
     </script>
 
