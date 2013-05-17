@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
+//= require mediaelement_rails
 //= require_tree .

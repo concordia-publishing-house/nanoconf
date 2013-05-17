@@ -1,0 +1,23 @@
+.video {
+  margin-bottom: 4em;
+  
+  h6 {
+    margin-bottom: 0.125em;
+    line-height: 1em;
+    
+    .video-author, .video-date {
+      display: inline-block;
+      margin-right: 0.5em;
+    }
+    
+    .video-author { color: #555; }
+    .video-date { font-weight: 400; color: rgb(13, 102, 145); }
+  }
+  
+  h2 {
+    margin-top: 0;
+    line-height: 1em;
+    
+    .video-title { font-weight: 100; }
+  }
+}
