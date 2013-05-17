@@ -1,3 +1,5 @@
+# encoding: UTF-8 
+
 class VideosController < ApplicationController
   
   def index
